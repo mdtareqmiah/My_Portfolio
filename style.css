@@ -82,6 +82,7 @@ nav h1 {
 
 #home {
   min-height: 100vh;
+  height: auto;
   min-width: fit-content;
   display: flex;
   flex-direction: column;
@@ -169,6 +170,7 @@ h2::after {
 #about {
   background: #fff;
   min-height: 100vh;
+  height: auto;
   /* min-width: fit-content; */
   border-radius: 25px;
   padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 4vw, 3rem);
@@ -499,6 +501,15 @@ footer {
     transform: translateY(0);
   }
 }
+
+@media (max-height: 700px) {
+  #home {
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 
 @media (max-width: 1440px) {
   nav {
